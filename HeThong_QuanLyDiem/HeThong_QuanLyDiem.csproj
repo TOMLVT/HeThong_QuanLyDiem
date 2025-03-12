@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63B02091-A200-4418-877E-6C4DA44C7ECC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HeThong_QuanLyDiem</RootNamespace>
+    <AssemblyName>HeThong_QuanLyDiem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QuanLyDiemSinhVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyDiemSinhVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmManHinhChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmManHinhChinh.Designer.cs">
+      <DependentUpon>frmManHinhChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\frmQuenMatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmQuenMatkhau.Designer.cs">
+      <DependentUpon>frmQuenMatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ManHinhGiaoVien\frmManHinhGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ManHinhGiaoVien\frmManHinhGiaoVien.Designer.cs">
+      <DependentUpon>frmManHinhGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ManHinhSinhVien\frmManHinhSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ManHinhSinhVien\frmManHinhSinhVien.Designer.cs">
+      <DependentUpon>frmManHinhSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\QuanLyLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\QuanLyLop.Designer.cs">
+      <DependentUpon>QuanLyLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_ManHinhChinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_ManHinhChinh.Designer.cs">
+      <DependentUpon>ufrm_ManHinhChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyDiem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyDiem.Designer.cs">
+      <DependentUpon>ufrm_QuanLyDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyGiangVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyGiangVien.Designer.cs">
+      <DependentUpon>ufrm_QuanLyGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyKhoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyKhoa.Designer.cs">
+      <DependentUpon>ufrm_QuanLyKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyMonHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyMonHoc.Designer.cs">
+      <DependentUpon>ufrm_QuanLyMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyNganh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLyNganh.Designer.cs">
+      <DependentUpon>ufrm_QuanLyNganh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLySinhVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_QuanLySinhVien.Designer.cs">
+      <DependentUpon>ufrm_QuanLySinhVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmManHinhChinh.resx">
+      <DependentUpon>frmManHinhChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmQuenMatkhau.resx">
+      <DependentUpon>frmQuenMatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ManHinhGiaoVien\frmManHinhGiaoVien.resx">
+      <DependentUpon>frmManHinhGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ManHinhSinhVien\frmManHinhSinhVien.resx">
+      <DependentUpon>frmManHinhSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\QuanLyLop.resx">
+      <DependentUpon>QuanLyLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_ManHinhChinh.resx">
+      <DependentUpon>ufrm_ManHinhChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLyDiem.resx">
+      <DependentUpon>ufrm_QuanLyDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLyGiangVien.resx">
+      <DependentUpon>ufrm_QuanLyGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLyKhoa.resx">
+      <DependentUpon>ufrm_QuanLyKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLyMonHoc.resx">
+      <DependentUpon>ufrm_QuanLyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLyNganh.resx">
+      <DependentUpon>ufrm_QuanLyNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_QuanLySinhVien.resx">
+      <DependentUpon>ufrm_QuanLySinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QuanLyDiemSinhVienDataSet.xsc">
+      <DependentUpon>QuanLyDiemSinhVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyDiemSinhVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyDiemSinhVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyDiemSinhVienDataSet.xss">
+      <DependentUpon>QuanLyDiemSinhVienDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{bd9171c4-4db2-4f5f-8cf5-4cd9f0c7dce4}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{dfb09d5b-a450-4bbb-bbd3-3d54d6648c57}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\images\png-transparent-education-icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\images\images-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\images\blue-abstract-background-3284841-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\images\4366867-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\images\istockphoto-1005743618-612x612-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
